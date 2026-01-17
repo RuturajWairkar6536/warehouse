@@ -16,10 +16,7 @@ def includeme(config):
     # these to segregate the Warehouse routes from the Forklift routes until
     # Forklift is properly split out into it's own project.
     warehouse = config.get_settings().get("warehouse.domain")
-
-    # General Admin pages
-    config.add_route("admin.dashboard", "/admin/", domain=warehouse)
-    config.add_route("admin.login", "/admin/login/", domain=warehouse)
+min/login/", domain=warehouse)
     config.add_route("admin.logout", "/admin/logout/", domain=warehouse)
 
     # User related Admin pages
